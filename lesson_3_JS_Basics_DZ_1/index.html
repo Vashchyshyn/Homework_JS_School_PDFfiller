@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id = 'user'></div>
+
+<script src="js/user.js"></script>
+<script>
+       let questions = [
+           "What is your first name",
+           "What is your last name",
+           "What is your middle name",
+           "When is your birthday"
+       ];
+       let userDate = [
+           'userFirstName',
+           'userLastName',
+           'userMiddleName',
+           'userBirthday'
+       ];
+    let newUser = new User(questions,userDate,document.getElementById('user'));
+    newUser.init();
+
+</script>
+</body>
+</html>
